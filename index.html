@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head -->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	
+	<title>Sorting Visualizer</title>
+
+	<link href="style.css" rel="stylesheet" />
+</head>
+
+
+<body >
+<section  >
+	<div class="nav">
+		<!-- <marquee behaviour="" direction="alternate" style="color: white;"><h1>Please Scroll down to read Description</h1></marquee> -->
+		<h2 class="head" id="heading">Select the sorting Algo</h2>
+	</div>
+    
+</section>
+<section class="data-container"></section>
+<section class="btns">
+	<button class="btn1" onclick="generate()" id="Button1" > Generate New Array </button>
+	<button class="btn2" onclick="SelectionSort(),disableBtn()" id="Button2" > Selection Sort </button>
+	<button class="btn3" onclick="bubbleSort(),disableBtn()" id="Button3" > Bubble Sort </button>
+	<button class="btn4" onclick="InsertionSort(),disableBtn()" id="Button4" > Insertion Sort </button>
+</section>	
+<section class="about">
+	<div class="description">
+		<h1>Description:-</h1>
+		<div class="about1">
+			<h3>Selection Sort</h3>
+			<p> Selection sort is a simple sorting algorithm. This sorting algorithm is an in-place comparison-based algorithm in which the list is divided into two parts, the sorted part at the left end and the unsorted part at the right end.
+				Initially, the sorted part is empty and the unsorted part is the entire list.The smallest element is selected from the unsorted array and swapped with the leftmost element, and that element becomes a part of the sorted array.
+				This process continues moving unsorted array boundary by one element to the right.		
+				This algorithm is not suitable for large data sets as its average and worst case complexities are of Ο(n2), where n is the number of items.
+			</p>
+		</div>
+		<div class="about2">
+			<h3>Bubble Sort</h3>
+			<p> Bubble sort is a simple sorting algorithm. 
+				This sorting algorithm is comparison-based algorithm in which each pair of adjacent elements is compared and the elements are swapped if they are not in order. 
+				This algorithm is not suitable for large data sets as its average and worst case complexity are of Ο(n2) where n is the number of items.
+			</p>
+		</div>
+		<div class="about3">
+			<h3> Insertion Sort </h3>
+			<p> This is an in-place comparison-based sorting algorithm. 
+				Here, a sub-list is maintained which is always sorted. For example, the lower part of an array is maintained to be sorted. 
+				An element which is to be 'insert'ed in this sorted sub-list, has to find its appropriate place and then it has to be inserted there. Hence the name, insertion sort.
+				The array is searched sequentially and unsorted items are moved and inserted into the sorted sub-list (in the same array). 
+				This algorithm is not suitable for large data sets as its average and worst case complexity are of Ο(n2), where n is the number of items.
+			</p>
+		</div>		
+	</div>
+
+</section>
+
+</body>
+<script src="script.js"></script>
+</html>
